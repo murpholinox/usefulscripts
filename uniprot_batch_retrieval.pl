@@ -1,3 +1,9 @@
+## What it does: Finds all PDBs for a list of UACs
+## From: https://www.uniprot.org/help/api_batch_retrieval then click on perl example
+## Usage: `perl ./uniprot_batch_retrieval.pl` 
+## Output: All possible information for given UACs 
+## Works with: perl5
+
 use strict;
 use warnings;
 use LWP::UserAgent;

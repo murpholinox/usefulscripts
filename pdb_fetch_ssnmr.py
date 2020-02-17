@@ -1,7 +1,7 @@
-## What it does: Finds all PDBs that have been resolved using Solid State NMR.
+## What it does: Finds all PDBs that have been resolved using Solid State NMR
 ## From: http://www.rcsb.org/pdb/software/static.do?p=/software/webservices/search_nmr.jsp
-## Usage: `python2 thisfile`
-## Output: Not sure
+## Usage: `python2 ./pdb_fetch_ssnmr.py`
+## Output: Number of PDB IDs that conform to the search criteria
 ## Works with: python2
 
 import urllib2

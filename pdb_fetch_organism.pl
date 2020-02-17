@@ -1,15 +1,14 @@
-## What it does: Finds all PDBs that have been resolved for a particular organism.
+## What it does: Finds all PDBs that have been resolved for a particular organism
 ## From: http://www.rcsb.org/pdb/software/static.do?p=/software/webservices/search_organism.jsp
-## Usage: `perl thisfile` 
-## Output: List of PDB Ids.
+## Usage: `perl ./pdb_fetch_organism.pl` 
+## Output: List of PDB IDs that conform to the search criteria
 ## Works with: perl5
-
 
 use strict;
 use LWP::Simple qw( $ua );
 
 
-
+# Change the $organism_name variable to get another organism
 my $organism_name = 'nipah';
 my $XML_query = qq(
 <?xml version="1.0" encoding="UTF-8"?>

@@ -1,7 +1,7 @@
-## What it does: Finds all PDBs with 95% sequence id to P00698 UAC (Hen egg white lysozyme) that have been resolved using X-RAY.
+## What it does: Finds all PDBs with 95% sequence id to hen egg white lysozyme that have been resolved using X-RAY
 ## From: http://www.rcsb.org/pdb/software/static.do?p=/software/webservices/search_nmr.jsp and murpholinox@gmail.com
-## Usage: `python2 thisfile`
-## Output: the number of PDB IDs that conform to the search criteria.
+## Usage: `python2 ./pdb_fetch_seq_xray_p2.py`
+## Output: Number of PDB IDs that conform to the search criteria
 ## Works with: python2
 
 import urllib2

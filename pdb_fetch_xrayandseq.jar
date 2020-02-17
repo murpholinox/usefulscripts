@@ -1,8 +1,8 @@
 ## What it does: Finds all PDBs with same sequence as 1HIV:A that have been resolved using X-RAY
 ## From: http://www.rcsb.org/pdb/software/static.do?p=/software/webservices/PostXMLQuery.jsp
-## Usage: `java ./pdb_fetch_xrayandseq.java`
-## Output: Not sure. It won't run
-## Works with: I tried with openJDK and java from Oracle and nothing. 
+## Usage: `python2 thisfile`
+## Output: Not sure
+## Works with: python2
 
 import java.io.BufferedReader;
 import java.io.IOException;
