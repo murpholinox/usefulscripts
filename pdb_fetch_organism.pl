@@ -1,7 +1,7 @@
 ## What it does: Finds all PDBs that have been resolved for a particular organism.
 ## From: http://www.rcsb.org/pdb/software/static.do?p=/software/webservices/search_organism.jsp
-## Usage: `python thisfile` 
-## Output: Not sure
+## Usage: `perl thisfile` 
+## Output: List of PDB Ids.
 ## Works with: perl5
 
 
