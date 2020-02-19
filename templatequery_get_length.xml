@@ -1,0 +1,34 @@
+<orgPdbCompositeQuery version="1.0">
+ <queryRefinement>
+  <queryRefinementLevel>0</queryRefinementLevel>
+  <orgPdbQuery>
+    <version>head</version>
+    <queryType>org.pdb.query.simple.UpAccessionIdQuery</queryType>
+    <description>Simple query for a list of Uniprot Accession IDs: </description>
+    <accessionIdList>UACs</accessionIdList>
+  </orgPdbQuery>
+ </queryRefinement>
+ <queryRefinement>
+  <queryRefinementLevel>1</queryRefinementLevel>
+  <conjunctionType>and</conjunctionType>
+  <orgPdbQuery>
+    <version>head</version>
+    <queryType>org.pdb.query.simple.NumberOfEntitiesQuery</queryType>
+    <description>Number of Entities Search : Entity Type=Protein Min Number of Entities=1 Max Number of Entities=1</description>
+    <entity.type.>p</entity.type.>
+    <struct_asym.numEntities.min>1</struct_asym.numEntities.min>
+    <struct_asym.numEntities.max>1</struct_asym.numEntities.max>
+  </orgPdbQuery>
+ </queryRefinement>
+ <queryRefinement>
+  <queryRefinementLevel>2</queryRefinementLevel>
+  <conjunctionType>and</conjunctionType>
+  <orgPdbQuery>
+    <version>head</version>
+    <queryType>org.pdb.query.simple.ExpTypeQuery</queryType>
+    <description>Experimental Method is X-RAY</description>
+    <mvStructure.expMethod.value>X-RAY</mvStructure.expMethod.value>
+    <mvStructure.expMethod.exclusive>y</mvStructure.expMethod.exclusive>
+  </orgPdbQuery>
+ </queryRefinement>
+</orgPdbCompositeQuery>
