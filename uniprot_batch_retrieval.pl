@@ -10,7 +10,7 @@ use LWP::UserAgent;
 
 my $list = $ARGV[0]; # File containg list of UniProt identifiers.
 
-my $base = 'http://www.uniprot.org';
+my $base = 'https://www.uniprot.org';
 my $tool = 'uploadlists';
 
 my $contact = ''; # Please set a contact email address here to help us debug in case of problems (see https://www.uniprot.org/help/privacy).
@@ -22,6 +22,11 @@ my $response = $agent->post("$base/$tool/",
                               'format' => 'txt',
                               'from' => 'ACC+ID',
                               'to' => 'ACC',
+                              # If you want tab-separated output instead of full entries, specify 'tab' instead of 'txt' above
+                              # and include the following optional line to include your preferred set of columns
+                              # instead of the default from-to output:
+                              'columns' => 'id,entry name,reviewed,protein names,genes,organism,length,database(RefSeq),go(molecular function)',
+
                             ],
                             'Content_Type' => 'form-data');
 
