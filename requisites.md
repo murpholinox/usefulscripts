@@ -2,9 +2,15 @@
 
 > Scripts should work on a modern Linux distro.
 
-### uniprot_batch_retrieval.pl
+### `uniprot_batch_retrieval.pl`
 
 ```{bash}
 sudo dnf install 'perl(LWP::UserAgent)'
 sudo dnf install perl-LWP-Protocol-https
+```
+
+### `pegaimgs_*.sh`
+
+```{bash}
+sudo dnf install ImageMagick
 ```
