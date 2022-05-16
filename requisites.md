@@ -1,12 +1,10 @@
-# Requisites to run successfully the scripts
+# Requisites to run successfully the scripts 
 
-## On a Fedora 31 workstation
+> Scripts should work on a modern Linux distro.
 
 ### uniprot_batch_retrieval.pl
 
-`sudo dnf install 'perl(LWP::UserAgent)'`
-`sudo dnf install perl-LWP-Protocol-https`
-
-### csv2tab.sh
-
-Nothing. Only python 3 (the default).
+```{bash}
+sudo dnf install 'perl(LWP::UserAgent)'
+sudo dnf install perl-LWP-Protocol-https
+```
