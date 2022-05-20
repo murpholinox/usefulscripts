@@ -97,7 +97,8 @@ RSYNC=<your local>/rsync                             # location of local rsync
 
 
 ############################################################################
-# Rsync only the mmCIF format coordinates  /pub/pdb/data/structures/divided/mmCIF (Aproximately 24 GB)
+# Rsync only the mmCIF format coordinates  /pub/pdb/data/structures/divided/mmCIF (Aproximately 24 GB) 
+# Not 24 GB, but 54 GB. I guess those values are from 2002 and not 2022.
 ############################################################################
 #${RSYNC} -rlpt -v -z --delete --port=$PORT ${SERVER}/data/structures/divided/mmCIF/ $MIRRORDIR > $LOGFILE 2>/dev/null
 
